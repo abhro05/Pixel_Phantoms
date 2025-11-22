@@ -13,7 +13,8 @@
     <div id="navbar-placeholder"></div>
     <script src="../js/navbar.js"></script>
     <script>
-        renderNavbar();
+        // FIX: Pass '../' to tell the script we are in a subfolder
+        renderNavbar('../'); 
     </script>
 
 <section class="content contributors-section">
@@ -100,10 +101,11 @@
     <div id="footer-placeholder"></div>
     <script src="../js/footer.js"></script>
     <script>
-        renderFooter();
+        // FIX: Pass '../' here as well
+        renderFooter('../');
     </script>
 
-<script src="../js/theme.js"></script>
-<script src="../js/contributors.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/contributors.js"></script>
 </body>
 </html>
