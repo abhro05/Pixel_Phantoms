@@ -1,0 +1,23 @@
+[
+    {
+        "title": "AI Workshop: Intro to Machine Learning",
+        "date": "March 15, 2025",
+        "location": "Auditorium",
+        "description": "A hands-on introduction to AI and ML concepts.",
+        "link": "#"
+    },
+    {
+        "title": "Hackathon: CodeStorm 2025",
+        "date": "April 10-11, 2025",
+        "location": "Innovation Lab",
+        "description": "24-hour hackathon open to all students.",
+        "link": "#"
+    },
+    {
+        "title": "UI/UX Creative Minds Meetup",
+        "date": "May 3, 2025",
+        "location": "Seminar Hall 3",
+        "description": "Design meetup for UI/UX enthusiasts.",
+        "link": "#"
+    }
+]
