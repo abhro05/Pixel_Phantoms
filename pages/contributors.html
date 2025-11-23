@@ -12,9 +12,7 @@
 
     <div id="navbar-placeholder"></div>
     <script src="../js/navbar.js"></script>
-    <script>
-        renderNavbar('../'); 
-    </script>
+    <script>renderNavbar('../');</script>
 
     <div class="main-content">
         <section class="content contributors-section">
@@ -31,6 +29,14 @@
                 <div class="stat-card">
                     <h3>Total Commits</h3>
                     <p id="total-commits">Loading...</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Total PRs</h3>
+                    <p id="total-prs">Loading...</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Total Points</h3>
+                    <p id="total-points">Loading...</p>
                 </div>
                 <div class="stat-card">
                     <h3>GitHub Stars</h3>
@@ -55,11 +61,9 @@
             </div>
 
             <h2>Top Contributors</h2>
-            <div class="contributors-grid" id="contributors-grid">
-                </div>
+            <div class="contributors-grid" id="contributors-grid"></div>
             
-            <div id="pagination-controls" class="pagination-container">
-                </div>
+            <div id="pagination-controls" class="pagination-container"></div>
 
             <h2 class="mt-large">Recent Contribution Activity</h2>
             <div class="activity-container" id="activity-list">
@@ -109,10 +113,14 @@
                     <div id="modal-badge-icon" class="modal-rank-icon"></div>
                 </div>
                 <h2 id="modal-name">Username</h2>
-                <p id="modal-tier-text" class="modal-subtitle">Contributor</p>
+                <p id="modal-id" class="modal-subtitle">ID: --</p>
             </div>
 
             <div class="modal-stats-row">
+                <div class="modal-stat">
+                    <span class="stat-label">Rank</span>
+                    <span class="stat-number" id="modal-rank">#0</span>
+                </div>
                 <div class="modal-stat">
                     <span class="stat-label">Contribution Score</span>
                     <span class="stat-number" id="modal-score">0</span>
@@ -136,9 +144,7 @@
 
     <div id="footer-placeholder"></div>
     <script src="../js/footer.js"></script>
-    <script>
-        renderFooter('../');
-    </script>
+    <script>renderFooter('../');</script>
 
     <script src="../js/theme.js"></script>
     <script src="../js/contributors.js"></script>
