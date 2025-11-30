@@ -73,53 +73,80 @@ You can:
 # 📁 Project Structure
 
 ```
-pixel-phantoms-website/
-│
-├── frontend/
-│   ├── index.html
-│   ├── about.html
-│   ├── contact.html
-│   ├── team.html
-│   ├── events.html
-│   ├── pages/
-│   │   ├── gallery.html
-│   │   ├── community.html
-│   │   ├── projects.html
-│   │   └── join-us.html
-│   ├── assets/
-│   │   ├── images/
-│   │   ├── icons/
-│   │   ├── fonts/
-│   │   ├── data/
-│   │   └── gallery/
-│   ├── components/
-│   │   ├── navbar.html
-│   │   ├── footer.html
-│   │   └── cards.html
-│   ├── css/
-│   │   ├── styles.css
-│   │   ├── light-mode.css
-│   │   ├── dark-mode.css
-│   │   └── components/
-│   └── js/
-│       ├── script.js
-│       └── modules/
-│
-├── docs/
-│   ├── API_DOCS.md
-│   ├── CONTRIBUTING.md
-│   ├── ROADMAP.md
-│   └── DESIGN_GUIDELINES.md
+Pixel_Phantoms/
 │
 ├── .github/
 │   ├── ISSUE_TEMPLATE/
-│   ├── PULL_REQUEST_TEMPLATE.md
+│   │   ├── bug_report.md
+│   │   └── feature_request.md
 │   └── workflows/
+│       └── (action files if any)
 │
-├── .gitignore
+├── assets/
+│   ├── demo.png
+│   ├── host-event.jpg
+│   ├── logo.png
+│   └── ... other images
+│
+├── css/
+│   ├── back-to-top.css
+│   ├── community.css
+│   ├── contact.css
+│   ├── contributors.css
+│   ├── events.css
+│   ├── gallery.css
+│   ├── help.css
+│   ├── home-gsap.css
+│   ├── join-us.css
+│   ├── privacy.css
+│   ├── projects.css
+│   ├── style.css
+│   ├── terms.css
+│   └── ...more styles
+│
+├── js/
+│   ├── contact.js
+│   ├── contributors.js
+│   ├── events.js
+│   ├── footer.js
+│   ├── gallery.js
+│   ├── help.js
+│   ├── home-gsap.js
+│   ├── home-leaderboard.js
+│   ├── join-us.js
+│   ├── main.js
+│   ├── navbar.js
+│   ├── privacy.js
+│   ├── projects.js
+│   ├── scripts.js
+│   ├── terms.js
+│   └── theme.js
+│
+├── pages/
+│   ├── community.html
+│   ├── contributors.html
+│   ├── gallery.html
+│   ├── help.html
+│   ├── join-us.html
+│   ├── privacy.html
+│   ├── projects.html
+│   ├── terms.html
+│   └── about.html
+│
+├── data/
+│   └── events.json
+│
+├── index.html
+├── about.html
+├── contact.html
+├── events.html
+├── team.html
+│
 ├── README.md
 ├── LICENSE
-└── SECURITY.md
+├── CONTRIBUTING.md
+└── CODE_OF_CONDUCT.md
+
 ```
 
 ---
