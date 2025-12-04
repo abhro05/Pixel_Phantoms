@@ -635,8 +635,6 @@ body.hud-mode {
 }
 
 /* --- 3. PROJECTS VIEW (Hex Grid) --- */
-/* --- 3. PROJECTS VIEW (Modules & Tracks) --- */
-
 .section-heading {
     /* Style consistency with hud-top-bar h1, but slightly adapted for section */
     font-family: var(--font-hud);

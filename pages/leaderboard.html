@@ -135,27 +135,145 @@
             </div>
 
             <div id="teams-view" class="hud-section">
-                <div class="roster-grid">
-                    <div class="roster-card">
-                        <div class="roster-header">
-                            <div class="roster-icon gold"><i class="fas fa-crown"></i></div>
-                            <h3>GOLD CLASS</h3>
+                <div class="teams-layout-wrapper">
+                    
+                    <aside class="roster-sidebar">
+                        <div class="sidebar-header">
+                            <h3><i class="fas fa-users"></i> AGENT_ROSTER</h3>
                         </div>
-                        <ul class="roster-list" id="roster-gold"></ul>
-                    </div>
-                    <div class="roster-card">
-                        <div class="roster-header">
-                            <div class="roster-icon silver"><i class="fas fa-shield-alt"></i></div>
-                            <h3>SILVER CLASS</h3>
+                        
+                        <div class="roster-scroll-area">
+                            <div class="roster-card sidebar-card">
+                                <div class="roster-header gold-theme">
+                                    <div class="roster-icon"><i class="fas fa-crown"></i></div>
+                                    <h3>GOLD CLASS</h3>
+                                </div>
+                                <ul class="roster-list" id="roster-gold"></ul>
+                            </div>
+
+                            <div class="roster-card sidebar-card">
+                                <div class="roster-header silver-theme">
+                                    <div class="roster-icon"><i class="fas fa-shield-alt"></i></div>
+                                    <h3>SILVER CLASS</h3>
+                                </div>
+                                <ul class="roster-list" id="roster-silver"></ul>
+                            </div>
+
+                            <div class="roster-card sidebar-card">
+                                <div class="roster-header bronze-theme">
+                                    <div class="roster-icon"><i class="fas fa-medal"></i></div>
+                                    <h3>BRONZE CLASS</h3>
+                                </div>
+                                <ul class="roster-list" id="roster-bronze"></ul>
+                            </div>
                         </div>
-                        <ul class="roster-list" id="roster-silver"></ul>
-                    </div>
-                    <div class="roster-card">
-                        <div class="roster-header">
-                            <div class="roster-icon bronze"><i class="fas fa-medal"></i></div>
-                            <h3>BRONZE CLASS</h3>
+                    </aside>
+
+                    <div class="framework-dashboard">
+                        
+                        <div class="hud-header-strip">
+                            <h2 class="section-heading"><i class="fas fa-network-wired"></i> OPERATIONAL FRAMEWORK & PROTOCOLS</h2>
+                            <div class="header-line"></div>
                         </div>
-                        <ul class="roster-list" id="roster-bronze"></ul>
+
+                        <div class="bento-grid">
+                            
+                            <div class="bento-item span-2-col">
+                                <div class="panel-label">ACTIVE_DISCIPLINES // SQUAD_SELECTION</div>
+                                <div class="tracks-container">
+                                    <div class="track-card" data-track="WEB">
+                                        <div class="track-icon"><i class="fas fa-globe-americas"></i></div>
+                                        <div class="track-info">
+                                            <h4>WEB_SECURITY</h4>
+                                            <p>Full-Stack Security & Deployment</p>
+                                            <span class="complexity-badge high">COMPLEXITY: HIGH</span>
+                                        </div>
+                                    </div>
+                                    <div class="track-card" data-track="AI">
+                                        <div class="track-icon"><i class="fas fa-brain"></i></div>
+                                        <div class="track-info">
+                                            <h4>NEURAL_NETS</h4>
+                                            <p>Model Deployment & RL</p>
+                                            <span class="complexity-badge high">COMPLEXITY: HIGH</span>
+                                        </div>
+                                    </div>
+                                    <div class="track-card" data-track="DATA">
+                                        <div class="track-icon"><i class="fas fa-database"></i></div>
+                                        <div class="track-info">
+                                            <h4>DATA_STREAMS</h4>
+                                            <p>Real-time Processing & Analytics</p>
+                                            <span class="complexity-badge high">COMPLEXITY: HIGH</span>
+                                        </div>
+                                    </div>
+                                    <div class="track-card" data-track="APP">
+                                        <div class="track-icon"><i class="fas fa-mobile-alt"></i></div>
+                                        <div class="track-info">
+                                            <h4>SYS_INTEGRATION</h4>
+                                            <p>Cross-Platform & Embedded Systems</p>
+                                            <span class="complexity-badge high">COMPLEXITY: HIGH</span>
+                                        </div>
+                                    </div>
+                                    <div class="track-card" data-track="BOT">
+                                        <div class="track-icon"><i class="fas fa-robot"></i></div>
+                                        <div class="track-info">
+                                            <h4>AUTONOMOUS_UNITS</h4>
+                                            <p>NLP Intent & Robotics</p>
+                                            <span class="complexity-badge high">COMPLEXITY: HIGH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bento-item span-1-col">
+                                <div class="panel-label">DOMINATION_METRIC // CALCULATION</div>
+                                <div class="scoring-logic-panel">
+                                    <div class="formula-box">
+                                        <code>MCS = &Sigma;(Code * W) + Doc</code>
+                                    </div>
+                                    <ul class="logic-list">
+                                        <li>
+                                            <span class="logic-label">L3 PR (High)</span>
+                                            <span class="logic-val text-neon">1100 XP</span>
+                                        </li>
+                                        <li>
+                                            <span class="logic-label">L2 PR (Med)</span>
+                                            <span class="logic-val text-warn">500 XP</span>
+                                        </li>
+                                        <li>
+                                            <span class="logic-label">Event Host</span>
+                                            <span class="logic-val text-gold">500 XP</span>
+                                        </li>
+                                        <li>
+                                            <span class="logic-label">Attendance</span>
+                                            <span class="logic-val text-blue">250 XP</span>
+                                        </li>
+                                    </ul>
+                                    <div class="bonus-section">
+                                        <h5><i class="fas fa-archive"></i> R&D ARCHIVES BONUS</h5>
+                                        <p>Submit proof-of-concepts to Archives for direct multiplier bonuses.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bento-item span-3-col">
+                                <div class="panel-label">CANDIDATE_RULEBOOK // STANDARDIZED_PROTOCOLS</div>
+                                <div class="rules-grid">
+                                    <div class="rule-card">
+                                        <h5><i class="fas fa-balance-scale"></i> 01. ELIGIBILITY</h5>
+                                        <p>Open to all active agents. Cross-discipline contributions are permitted but primary track scoring takes precedence.</p>
+                                    </div>
+                                    <div class="rule-card">
+                                        <h5><i class="fas fa-gavel"></i> 02. CONDUCT</h5>
+                                        <p>Code plagiarism results in immediate disqualification. Collaboration is encouraged but must be documented.</p>
+                                    </div>
+                                    <div class="rule-card">
+                                        <h5><i class="fas fa-file-code"></i> 03. SUBMISSION</h5>
+                                        <p>All PRs must follow the strict formatting guidelines. Undocumented code receives 0 XP regardless of functionality.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
