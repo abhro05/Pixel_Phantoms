@@ -280,7 +280,7 @@ See the full license in the [`LICENSE`](LICENSE) file.
 Thanks to all the amazing contributors who make this project better every day! 💖
 
 <a href="https://github.com/sayeeg-11/Pixel_Phantoms/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=sayeeg-11/Pixel_Phantoms" />
+  <img width="550px" src="https://contrib.rocks/image?repo=sayeeg-11/Pixel_Phantoms" />
 </a>
 
 **👉 See the full contribution graph:**  
