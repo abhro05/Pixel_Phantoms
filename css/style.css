@@ -81,6 +81,9 @@
 :root .btn-hollow:hover {
   --text-primary: #00aaff;
 }
+:root .cyber-card p , .stat small , .toggle-label  {
+  --text-secondary: white;
+}
 
 [data-theme='dark'] {
   /* Dark theme variables */
