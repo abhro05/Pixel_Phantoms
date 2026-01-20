@@ -11,6 +11,7 @@ function renderFooter(basePath = '') {
 
   const footerHTML = `
     <footer class="site-footer dynamic-electronic">
+      <noscript class="no-js-note">Animations are disabled because JavaScript is turned off.</noscript>
       <div class="signal-grid" aria-hidden="true">
         <div class="signal-line horizontal"></div>
         <div class="signal-line vertical"></div>
@@ -90,7 +91,7 @@ function renderFooter(basePath = '') {
             <div class="footer-bottom-links">
               <a href="${basePath}pages/privacy.html" class="bottom-link">Privacy</a> | 
               <a href="${basePath}pages/terms.html" class="bottom-link">Terms</a> | 
-              <a href="${basePath}pages/tutorials/phantom-node.html" class="bottom-link">Tutorials</a>
+              <a href="${basePath}pages/tutorials.html" class="bottom-link">Tutorials</a>
             </div>
           </div>
         </div>

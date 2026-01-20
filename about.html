@@ -24,9 +24,11 @@
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/home-gsap.css" />
     <link rel="stylesheet" href="css/back-to-top.css" />
+    <link rel="stylesheet" href="css/animations.css" />
     <link rel="stylesheet" href="css/cursor-effect.css" />
     <link rel="stylesheet" href="css/login.css" />
     <link rel="stylesheet" href="css/events.css" />
+    <link rel="stylesheet" href="css/keyboard-shortcuts.css" />
     <style>
       /* Minimal modal styles that reuse login.css form classes */
       #register-modal {
@@ -90,6 +92,7 @@
     </script>
 
     <main id="main-content" tabindex="-1">
+      <div class="page-transition-wrapper" data-page="about">
       <!-- Hero Section -->
       <section class="hero-section" role="banner">
         <div class="hero-content">
@@ -154,7 +157,7 @@
 
             <div class="activity-card" role="listitem" tabindex="0">
               <div class="activity-icon">
-                <i class="fas fa-code-review" aria-hidden="true"></i>
+                <i class="fas fa-clipboard-check" aria-hidden="true"></i>
               </div>
               <h3>Project Reviews</h3>
               <p>Detailed feedback and code review sessions</p>
@@ -427,6 +430,7 @@
           </div>
         </div>
       </section>
+    </div>
     </main>
 
     <div id="footer-placeholder"></div>
@@ -444,6 +448,7 @@
       });
     </script>
 
+    <script src="js/page-transitions.js" defer></script>
     <script src="js/theme.js"></script>
     <script src="js/cursor-effect.js"></script>
     <script src="js/back-to-top.js"></script>
@@ -494,5 +499,6 @@
         });
       });
     </script>
+    <script src="js/keyboard-shortcuts.js"></script>
   </body>
 </html>
