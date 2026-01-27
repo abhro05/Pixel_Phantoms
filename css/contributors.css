@@ -1,6 +1,385 @@
 /* ================= CONTRIBUTORS PAGE STYLES ================= */
+/* ============================================================
+   PIXEL PHANTOMS - ELITE ACCESSIBLE & CENTERED DESIGN
+   Fixes: Visibility, Scroll-free Lead Card, Strict 2-Column Grid
+   ============================================================ */
+
+   :root {
+    /* DARK THEME (DEFAULT) */
+    --bg-primary: #0a0b10;
+    --card-bg: #12141d;
+    --text-primary: #ffffff;
+    --text-secondary: #a0a0a8;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --accent-color: #00ffa3;
+    --stat-box-bg: rgba(255, 255, 255, 0.03);
+    --shadow-main: 0 20px 40px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* RECTIFIED LIGHT MODE - HIGH CONTRAST */
+  body.light-mode {
+    --bg-primary: #f8fafc;    /* Clean slate background */
+    --card-bg: #ffffff;       /* Pure white cards */
+    --text-primary: #0f172a;  /* Deep navy text for maximum readability */
+    --text-secondary: #475569; /* Slate grey for subtext */
+    --border-color: rgba(0, 0, 0, 0.1);
+    --accent-color: #2563eb;  /* Strong blue for high visibility */
+    --stat-box-bg: #f1f5f9;   /* Subtle grey for internal containers */
+    --shadow-main: 0 10px 30px rgba(0, 0, 0, 0.05);
+  }
+
+  /* --- GLOBAL LAYOUT & CENTERING --- */
+  .contributors-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* Centers every section horizontally */
+    text-align: center;
+    padding: 80px 5%;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background 0.3s ease;
+    width: 100%;
+  
+  }
+  
+  .section-header {
+    margin-bottom: 4rem;
+    width: 100%;
+  }
+  
+  /* --- STATS GRID --- */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 24px;
+    width: 100%;
+    max-width: 1300px;
+    margin-bottom: 80px;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+  
+  /* --- PROJECT LEAD (SCROLL-FREE WIDTH) --- */
+  .lead-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+  
+  
+  .lead-badge {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #ffd700, #ffa500);
+    color: #000;
+    padding: 8px 24px;
+    border-radius: 30px;
+    font-weight: 800;
+    box-shadow: 0 10px 20px rgba(255, 215, 0, 0.3);
+  }
+  /* --- INCREASED WIDTH: PROJECT LEAD CARD --- */
+.lead-container {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+  /* --- PROJECT LEAD (SCROLL-FREE WIDTH) --- */
+.project-lead-card {
+  background: var(--card-bg);
+  border: 2px solid var(--accent-color);
+  border-radius: 40px;
+  padding: 60px 40px;
+  
+  width: fit-content;
+  margin: 0 auto 80px auto;
+  color: var(--text-primary);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+.lead-badge {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #ffd700, #ffa500);
+  color: #000;
+  padding: 8px 25px;
+  border-radius: 30px;
+  font-weight: 800;
+  box-shadow: 0 10px 20px rgba(255, 215, 0, 0.3);
+}
+.top-contributors {
+  width: 100%;
+  max-width: 1300px; /* Same as your lead-container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 150px auto 80px auto;
+}
+/* --- TOP CONTRIBUTORS GRID (FULL PAGE WIDTH) --- */
+.contributors-grid {
+  display: grid;
+  /* Forces exactly 2 columns that share the space equally */
+  grid-template-columns: 1fr 1fr; 
+  justify-content: center; /* Centers the cards horizontally */
+  /* Generous gap between the two cards */
+  gap: 60px; 
+  /* Allow the grid to take up 95% of the viewport width */
+  width: fit-content;
+  /* Removed the 1250px limit to allow expansion */
+  max-width: 1800px; 
+  margin: 60px 60px;
+  
+  flex-wrap: wrap;
+ 
+  
+}
+
+.contributor-card {
+  /* Forces card to fill 100% of its grid column */
+  flex: 0 1 450px;
+  width: min-content; 
+  max-width: none; 
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 32px;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: var(--shadow-main);
+  box-sizing: border-box; /* Crucial: includes padding in the width */
+  transition: transform 0.3s ease;
+  
+}
 
 
+
+
+/* Ensure the header text also stays centered */
+#top-contributors {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+.contributor-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent-color);
+}
+
+/* --- INTERNAL CARD COMPONENTS --- */
+.github-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: fit-content;
+  margin: 30px 0;
+  background: var(--stat-box-bg);
+  padding: 25px;
+  border-radius: 24px;
+  border: 1px solid var(--border-color);
+  justify-content: center;
+}
+
+.stat-value {
+  color: var(--accent-color);
+  font-weight: 800;
+  font-size: 1.6rem; /* Larger numbers for better readability */
+}
+
+
+
+/* --- 1. THE "JAN FEB" GAP FIX --- */
+/* Target HTML-based month labels */
+.github-calendar .month {
+  margin-right: 18px !important; /* Increased gap */
+  display: inline-block !important;
+}
+
+/* Target SVG-based month labels (if the library uses SVG text) */
+.github-calendar text.month {
+  word-spacing: 25px !important; /* Forces space between words like Jan and Feb */
+  letter-spacing: 0.5px !important;
+}
+
+/* General container fix to prevent squashing */
+.github-calendar {
+  word-spacing: 12px !important;
+  padding: 10px 0;
+}
+  
+  
+  /* FIX: Contribution Calendar Labels for Light Mode */
+  .github-calendar .month, 
+  .github-calendar .wday,
+  .github-calendar .legend {
+    fill: var(--text-secondary) !important;
+    color: var(--text-secondary) !important;
+    font-weight: 600;
+    margin-right: 12px !important; /* Forces a gap if rendered as HTML */
+    padding-right: 5px;
+  }
+  /* If the library is using SVG text labels */
+.github-calendar svg text {
+  letter-spacing: 0.5px; /* Adds breathing room between characters */
+}
+/* --- COMPACT BUTTONS --- */
+.contribution-section .github-calendar a {
+  margin: 8px 4px !important;
+  padding: 4px 12px !important; /* Makes the 'Skip to...' buttons shorter */
+  font-size: 11px !important;
+}
+  /* Hide library scrollbars when width is sufficient */
+  .github-calendar {
+    overflow-x: hidden !important;
+    padding: 10px 0;
+  }
+  
+  /* --- RECENT PROJECTS --- */
+  .recent-repos {
+    width: 100%;
+    margin-top: 25px;
+    background: var(--stat-box-bg) !important;
+    border-radius: 24px;
+    padding: 25px;
+    border: 1px solid var(--border-color);
+    text-align: left;
+  }
+  /* ============================================================
+   LIGHT MODE VISIBILITY RECTIFICATION
+   Fixes: Faint "Skip to..." buttons and invisible calendar labels
+   ============================================================ */
+
+body.light-mode {
+  --bg-primary: #f8fafc;
+  --card-bg: #ffffff;
+  --text-primary: #0f172a;   /* High contrast navy */
+  --text-secondary: #334155; /* Dark slate for labels */
+  --border-color: rgba(0, 0, 0, 0.15);
+  --accent-color: #2563eb;   /* Solid blue for buttons */
+  --stat-box-bg: #f1f5f9;
+}
+
+/* --- CALENDAR BUTTONS FIX --- */
+/* This targets the "Skip to..." and "Learn how..." buttons specifically */
+body.light-mode .contribution-section .github-calendar a {
+  background: rgba(37, 99, 235, 0.08) !important;
+  border: 1px solid #2563eb !important;
+  color: #1e40af !important; /* Deep blue text for readability */
+  font-weight: 700 !important;
+}
+
+body.light-mode .contribution-section .github-calendar a[href*="contributions-year-list"],
+body.light-mode .contribution-section .github-calendar a[href*="how-we-count-contributions"] {
+  background: #2563eb !important; /* Solid blue background */
+  color: #ffffff !important;      /* White text on dark blue */
+  border: none !important;
+}
+
+/* --- CALENDAR TEXT & LABELS FIX --- */
+body.light-mode .github-calendar .month, 
+body.light-mode .github-calendar .wday,
+body.light-mode .github-calendar .legend,
+body.light-mode .contribution-section h4 {
+  fill: #0f172a !important;   /* Force SVG text to be navy */
+  color: #0f172a !important;  /* Force standard text to be navy */
+  opacity: 1 !important;
+  font-weight: 700 !important;
+}
+
+/* --- RECENT PROJECTS THEME RECTIFICATION --- */
+body.light-mode .recent-repos {
+  background: #f8fafc !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+body.light-mode .recent-repos h4 {
+  color: #0f172a !important;
+}
+
+body.light-mode .repo-item {
+  background: #ffffff !important;
+  border: 1px solid rgba(0, 0, 0, 0.05) !important;
+  color: #1e293b !important;
+}
+/* Add these styles to your CSS file */
+
+.activity-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  border-radius: 12px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: default;
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+/* The Hover State */
+.activity-item:hover {
+  background-color: #ffffff;
+  border-color: #3b82f6;
+  transform: translateX(8px) translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  
+}
+
+/* Bullet point pulse on hover */
+.activity-item:hover .bullet {
+  transform: scale(1.4);
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
+}
+  /* --- RESPONSIVENESS --- */
+  @media (max-width: 1000px) {
+    .contributors-grid {
+      grid-template-columns: 1fr; /* Stacks to 1 column on tablets */
+      max-width: 600px;
+    }
+    
+    .project-lead-card {
+      padding: 40px 20px;
+    }
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .contribution-card {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+  
+  /* Staggered animation for list items */
+  .contribution-item {
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-out forwards;
+  }
+  
+  .contribution-item:nth-child(1) { animation-delay: 0.1s; }
+  .contribution-item:nth-child(2) { animation-delay: 0.2s; }
+  .contribution-item:nth-child(3) { animation-delay: 0.3s; }
+  .contribution-item:nth-child(4) { animation-delay: 0.4s; }
+  .scroll-to-top {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .scroll-to-top:hover {
+    transform: scale(1.1) translateY(-5px);
+    background-color: #2563eb; /* Slightly darker blue */
+  }
 /* --- SECTION HEADER & STATS --- */
 .contributors-section {
   padding: 60px 50px;
@@ -1437,4 +1816,3 @@ body.dark-mode .calendar .contrib-legend .legend {
 .contribution-section .github-calendar .float-right.color-fg-muted {
   display: none !important;
 }
-
