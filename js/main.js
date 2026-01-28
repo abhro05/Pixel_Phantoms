@@ -1,14 +1,6 @@
-<<<<<<< HEAD
-
-
-document.addEventListener('DOMContentLoaded', () => {
-    if (typeof renderNavbar === 'function') renderNavbar(window.basePath || '');
-    if (typeof renderFooter === 'function') renderFooter(window.basePath || '');
-=======
 /* ============================
    MAIN.JS - GLOBAL SCRIPTS
    ============================ */
->>>>>>> 7e757b0 (Add global loader for page navigation)
 
 document.addEventListener("DOMContentLoaded", () => {
   /* ============================
