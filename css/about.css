@@ -591,7 +591,11 @@ body.light-mode .motto-subtitle {
 .social-link.github { background: #24292e; }
 .social-link.discord { background: #5865f2; }
 
-/* JOIN SECTION */
+[data-theme="light"] .member-card{
+  background: #ffffff;
+}
+
+/* ===== JOIN SECTION ===== */
 #join-section {
   padding: 80px 0;
   background: linear-gradient(to bottom, var(--bg-primary), var(--card-bg));
